@@ -9,36 +9,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a95dccde-711c-4d7e-a33c-8ea255d46e07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/SmBeachApp.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/SmBeachApp.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Controllers/AuthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/UserDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SmBeachApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SmBeachApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ludovicoq"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ludovicoq/SmcBeachApp.git",
+    "accountId": "fba654ef-53f0-4dd8-8488-c2b883268c44"
+  }
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="3160EHNaVA7NnhBHmGTX6BxjeCh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.SmBeachApp: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -48,6 +64,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,8 +107,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754829102770</updated>
-      <workItem from="1754829104272" duration="750000" />
+      <workItem from="1754829104272" duration="4257000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(Solution): started project">
+      <option name="closed" value="true" />
+      <created>1754831546405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1754831546405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +127,8 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat(Solution): started project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Solution): started project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
