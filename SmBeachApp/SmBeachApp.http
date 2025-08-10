@@ -1,0 +1,6 @@
+@SmBeachApp_HostAddress = http://localhost:5207
+
+GET {{SmBeachApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
