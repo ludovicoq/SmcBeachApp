@@ -123,4 +123,13 @@
   <data name="auth.user-psw-incorrect" xml:space="preserve">
     <value />
   </data>
+  <data name="auth.user-already-registered" xml:space="preserve">
+    <value />
+  </data>
+  <data name="role.used-by-user" xml:space="preserve">
+    <value />
+  </data>
+  <data name="role.not-found" xml:space="preserve">
+    <value />
+  </data>
 </root>

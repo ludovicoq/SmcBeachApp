@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SmBeachApp.Data;
+using SmBeachApp.Entities;
 
-namespace SmBeachApp.Entities;
+namespace SmBeachApp.Data.Configuration;
 
 public static class ConfigureBaseModel
 {
@@ -12,22 +12,23 @@ public static class ConfigureBaseModel
             .HasColumnOrder(1)
             .IsRequired()
             .HasMaxLength(50)
-            .HasDefaultValueSql("(host_name())");
+            .HasDefaultValue("");
 
         entity.Property(e => e.UserRef)
             .HasColumnOrder(2)
             .IsRequired()
             .HasMaxLength(50)
-            .HasDefaultValueSql("(suser_sname())");
+            .HasDefaultValue("SYSTEM_USER");
 
         entity.Property(e => e.DateChange)
             .HasColumnOrder(3)
-            .HasDefaultValueSql("(getdate())")
+            .HasDefaultValueSql("CURRENT_TIMESTAMP")
             .HasColumnType("datetime");
 
         entity.Property(e => e.DateCreate)
             .HasColumnOrder(4)
-            .HasDefaultValueSql("(getdate())")
+            .HasDefaultValueSql("CURRENT_TIMESTAMP")
             .HasColumnType("datetime");
+
     }
 }

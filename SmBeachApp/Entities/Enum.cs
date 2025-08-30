@@ -1,6 +1,7 @@
 namespace SmBeachApp.Entities;
 
-public class Enum
+public enum ActiveType
 {
-    
+    Active,
+    Inactive
 }

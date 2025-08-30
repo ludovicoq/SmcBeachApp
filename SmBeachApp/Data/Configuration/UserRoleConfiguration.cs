@@ -1,9 +1,8 @@
-﻿using Mch.Authentication.ContextDb.Models;
-using Mch.ContextDbBase.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using SmBeachApp.Entities;
 
-namespace Mch.Authentication.ContextDb.Configurations.Authentication
+namespace SmBeachApp.Data.Configuration
 {
     public class UserRoleConfiguration : IEntityTypeConfiguration<UserRole>
     {

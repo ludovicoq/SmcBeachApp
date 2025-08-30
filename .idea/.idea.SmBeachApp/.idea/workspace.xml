@@ -9,13 +9,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a95dccde-711c-4d7e-a33c-8ea255d46e07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/Controllers/AuthController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/UserDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmBeachApp/Services/AuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Controllers/RoleController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Data/Configuration/ConfigureBaseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Data/Configuration/GroupConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Data/Configuration/RoleConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Data/Configuration/RoleGroupConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Data/Configuration/UserConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Data/Configuration/UserGroupConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Data/Configuration/UserRoleConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Data/SmBeachDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/BaseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Enum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Group.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/Filters/RoleFilterDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/GroupDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/PageResultDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/RoleDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/UserGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/UserRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/RoleGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/UserGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Entities/UserRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Extensions/DbExtensions/CommonExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Extensions/DbExtensions/RoleExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Extensions/ServicesExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmBeachApp/Services/RoleService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SmBeachApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SmBeachApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmBeachApp/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Entities/Models/ErrorResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/ErrorResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Entities/Models/HttpException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/HttpException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Entities/Models/UserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Entities/Models/UserDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Extensions/ExceptionHandlingMiddlewareExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Extensions/ExceptionHandlingMiddlewareExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Extensions/HttpExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Extensions/HttpExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Localization/Localization/TranslationStrings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Localization/Localization/TranslationStrings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Localization/Localization/TranslationStrings.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Localization/Localization/TranslationStrings.en.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Localization/Localization/TranslationStrings.es.resx" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Localization/Localization/TranslationStrings.es.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Localization/Localization/TranslationStrings.it.resx" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Localization/Localization/TranslationStrings.it.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Middlewares/ExceptionHandlingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Middlewares/ExceptionHandlingMiddleware.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmBeachApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/SmBeachApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/SmBeachApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmBeachApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmBeachApp/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,22 +65,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ludovicoq"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ludovicoq&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ludovicoq/SmcBeachApp.git",
-    "accountId": "fba654ef-53f0-4dd8-8488-c2b883268c44"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ludovicoq/SmcBeachApp.git&quot;,
+    &quot;accountId&quot;: &quot;fba654ef-53f0-4dd8-8488-c2b883268c44&quot;
   }
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Downloads/Main_Manager_Srv/src/Mch.MainManagerSrv/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Main_Manager_Srv/src/Mch.MainManagerSrv/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/36eb7ec0a5f8d54b28c293ffd2c83683da1dee4d283dd921f991a437e475c1c/ProviderCultureResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4eebf22aa86e1e4d1343314d1d5abda356c337167872efd367c5cbcce72ac7f/AcceptLanguageHeaderRequestCultureProvider.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3160EHNaVA7NnhBHmGTX6BxjeCh" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,9 +97,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.SmBeachApp: http.executor": "Run",
+    ".NET Launch Settings Profile.SmBeachApp: http.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -66,6 +110,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.SmBeachApp: http">
@@ -107,7 +156,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754829102770</updated>
-      <workItem from="1754829104272" duration="4257000" />
+      <workItem from="1754829104272" duration="6692000" />
+      <workItem from="1755203805575" duration="5162000" />
+      <workItem from="1755209864913" duration="1005000" />
+      <workItem from="1755336144176" duration="1793000" />
+      <workItem from="1755543003229" duration="1459000" />
+      <workItem from="1755544478729" duration="5306000" />
+      <workItem from="1755941035840" duration="4786000" />
+      <workItem from="1756024259301" duration="5390000" />
+      <workItem from="1756050382729" duration="18000" />
+      <workItem from="1756050954725" duration="3535000" />
+      <workItem from="1756234935216" duration="2413000" />
+      <workItem from="1756404256358" duration="727000" />
+      <workItem from="1756491068624" duration="493000" />
+      <workItem from="1756491573756" duration="111000" />
+      <workItem from="1756491809193" duration="5462000" />
     </task>
     <task id="LOCAL-00001" summary="feat(Solution): started project">
       <option name="closed" value="true" />
@@ -117,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754831546405</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(Solution): aggiunte classi base e iniziata auth">
+      <option name="closed" value="true" />
+      <created>1754838414010</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1754838414010</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +199,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="feat(Solution): started project" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Solution): started project" />
+    <MESSAGE value="feat(Solution): aggiunte classi base e iniziata auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Solution): aggiunte classi base e iniziata auth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -145,7 +217,24 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SmBeachApp/Middlewares/ExceptionHandlingMiddleware.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/SmBeachApp/Middlewares/ExceptionHandlingMiddleware.cs" containingFunctionPresentation="Method 'HandleExceptionAsync'">
+            <startOffsets>
+              <option value="1276" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1370" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Text.Json;
 
-namespace Mch.MainManagerSrv.Data.Models
+namespace SmBeachApp.Entities.Models
 {
     public class ErrorResponse
     {

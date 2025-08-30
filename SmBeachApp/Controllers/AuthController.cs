@@ -1,12 +1,10 @@
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using SmBeachApp.Entities;
 using SmBeachApp.Entities.Models;
 using SmBeachApp.Services;
 
 namespace SmBeachApp.Controllers;
-// todo: move all methods to a service class
-[Route("api/[controller]")]
+[Route("api/auth")]
 [ApiController]
 public class AuthController : ControllerBase
 {
@@ -17,17 +15,23 @@ public class AuthController : ControllerBase
    }
 
    [HttpPost("register")]
-   public ActionResult<User> Register([FromBody] UserDto request)
+   public async Task<ActionResult> Register([FromBody] UserDto request)
    {
-      var user = _authService.Register(request);
-      
-      return Ok(user);
+      await _authService.Register(request);
+      return Ok();
    }
 
    [HttpPost("login")]
-   public ActionResult<string> Login([FromBody] UserDto request)
+   public async Task<ActionResult<string>> Login([FromBody] UserDto request)
    {
-      var token =  _authService.Login(request);
+      var token =  await _authService.Login(request);
       return Ok(token);
+   }
+
+   [Authorize]
+   [HttpGet]
+   public IActionResult GetAuthApi()
+   {
+      return Ok("You are authenticated");
    }
 }

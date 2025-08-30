@@ -1,9 +1,8 @@
-﻿using Mch.Authentication.ContextDb.Models;
-using Mch.ContextDbBase.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using SmBeachApp.Entities;
 
-namespace Mch.Authentication.ContextDb.Configurations.Authentication
+namespace SmBeachApp.Data.Configuration
 {
     public class GroupConfiguration : IEntityTypeConfiguration<Group>
     {
@@ -16,8 +15,7 @@ namespace Mch.Authentication.ContextDb.Configurations.Authentication
             entity.HasIndex(e => e.Name, "UIX_Group_Name").IsUnique();
 
             entity.Property(e => e.GroupId)
-                .HasColumnOrder(0)
-                .HasDefaultValueSql("(newsequentialid())");
+                .ValueGeneratedOnAdd();
 
             entity.Property(e => e.Name)
                 .IsRequired()

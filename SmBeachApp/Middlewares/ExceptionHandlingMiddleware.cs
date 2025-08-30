@@ -1,6 +1,6 @@
-﻿using Mch.MainManagerSrv.Data.Models;
-using Mch.MainManagerSrv.Resources.Localization;
-using Microsoft.Extensions.Localization;
+﻿using Microsoft.Extensions.Localization;
+using SmBeachApp.Entities.Models;
+using SmBeachApp.Localization.Localization;
 
 namespace SmBeachApp.Middlewares
 {
@@ -25,9 +25,6 @@ namespace SmBeachApp.Middlewares
             }
             catch (Exception exception)
             {
-                // Do some stuff...
-                // Log exception
-
                 await HandleExceptionAsync(context, exception);
             }
         }

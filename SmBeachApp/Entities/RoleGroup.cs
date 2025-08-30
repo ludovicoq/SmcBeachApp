@@ -1,6 +1,6 @@
 namespace SmBeachApp.Entities;
 
-public class RoleGroup
+public class RoleGroup : BaseModel
 {
     public int RoleId { get; set; }
     public int GroupId { get; set; }

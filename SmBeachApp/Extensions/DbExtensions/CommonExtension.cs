@@ -1,6 +1,9 @@
 namespace SmBeachApp.Extensions.DbExtensions;
 
-public class CommonExtension
+public static class CommonExtension
 {
-    
+    public static IQueryable<T> Paginate<T>(this IQueryable<T> query, int page, int size)
+    {
+        return query.Skip((page - 1) * size).Take(size);
+    }
 }

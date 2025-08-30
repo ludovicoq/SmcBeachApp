@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
-using SmBeachApp.Middlewares;
+﻿using SmBeachApp.Middlewares;
 
-namespace Mch.MainManagerSrv.Extensions
+namespace SmBeachApp.Extensions
 {
     public static class ExceptionHandlingMiddlewareExtensions
     {

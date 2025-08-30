@@ -1,9 +1,8 @@
-﻿using Mch.Authentication.ContextDb.Models;
-using Mch.ContextDbBase.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using SmBeachApp.Entities;
 
-namespace Mch.Authentication.ContextDb.Configurations.Authentication
+namespace SmBeachApp.Data.Configuration
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {
@@ -13,17 +12,17 @@ namespace Mch.Authentication.ContextDb.Configurations.Authentication
 
             entity.ToTable("Users");
 
-            entity.HasIndex(e => e.UserName, "UIX_User_UserName").IsUnique();
+            entity.HasIndex(e => e.Username, "UIX_User_Username").IsUnique();
 
             entity.Property(e => e.UserId)
                 .HasColumnOrder(0)
-                .HasDefaultValueSql("(newsequentialid())");
+                .ValueGeneratedOnAdd();
 
             entity.Property(e => e.Email).HasMaxLength(50);
 
             entity.Property(e => e.PasswordHash).IsRequired().HasMaxLength(250);
 
-            entity.Property(e => e.UserName)
+            entity.Property(e => e.Username)
                .IsRequired()
                .HasMaxLength(50);
 

@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 
-namespace Mch.MainManagerSrv.Extensions
+namespace SmBeachApp.Extensions
 {
     public static class HttpExtensions
     {

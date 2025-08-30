@@ -46,4 +46,13 @@
   <data name="auth.user-psw-incorrect" xml:space="preserve">
     <value>Username or password are incorrect!</value>
   </data>
+  <data name="auth.user-already-registered" xml:space="preserve">
+    <value>User already registered</value>
+  </data>
+  <data name="role.used-by-user" xml:space="preserve">
+    <value>Cannot delete role because is used by one User</value>
+  </data>
+  <data name="role.not-found" xml:space="preserve">
+    <value>Role not found</value>
+  </data>
 </root>

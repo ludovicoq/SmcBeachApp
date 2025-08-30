@@ -1,7 +1,6 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 
-namespace Mch.MainManagerSrv.Data.Models
+namespace SmBeachApp.Entities.Models
 {
     public class HttpException : Exception
     {

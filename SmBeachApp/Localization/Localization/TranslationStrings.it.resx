@@ -103,4 +103,13 @@
   <data name="auth.user-psw-incorrect" xml:space="preserve">
 	  <value>Nome utente o password sono sbagliati!</value>
   </data>
+  <data name="auth.user-already-registered" xml:space="preserve">
+	  <value>Utente già registrato</value>
+  </data>
+  <data name="role.used-by-user" xml:space="preserve">
+	  <value>Impossibile eliminare ruolo perchè usato da un untente</value>
+  </data>
+  <data name="role.not-found" xml:space="preserve">
+	  <value>Ruolo non trovato</value>
+  </data>
 </root>
