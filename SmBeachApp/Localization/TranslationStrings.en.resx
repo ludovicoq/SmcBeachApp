@@ -55,4 +55,10 @@
   <data name="role.not-found" xml:space="preserve">
     <value>Role not found</value>
   </data>
+  <data name="group.not-found" xml:space="preserve">
+    <value>Group not found</value>
+  </data>
+  <data name="group.used-by-user" xml:space="preserve">
+    <value>Cannot delete group because is used by one User</value>
+  </data>
 </root>

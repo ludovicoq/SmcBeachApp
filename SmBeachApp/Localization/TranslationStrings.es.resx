@@ -132,4 +132,10 @@
   <data name="auth.user-not-found" xml:space="preserve">
     <value>Usuario no encontrado</value>
   </data>
+  <data name="group.not-found" xml:space="preserve">
+    <value>Grupo no encontrado</value>
+  </data>
+  <data name="group.used-by-user" xml:space="preserve">
+    <value>No se puede eliminar el grupo porque lo usa el usuario</value>
+  </data>
 </root>

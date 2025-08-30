@@ -31,24 +31,24 @@ public class RoleController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<RoleDto>> SearchRoles([FromBody] RoleFilterDto role, [FromQuery] int page,
+    public async Task<ActionResult<RoleDto>> SearchRoles([FromBody] RoleFilterDto filter, [FromQuery] int page,
         [FromQuery] int size)
     {
-        var result = await _roleService.SearchRolesAsync(role, page, size);
+        var result = await _roleService.SearchRolesAsync(filter, page, size);
         return Ok(result);
     }
 
     [HttpPut]
-    public async Task<ActionResult<RoleDto>> UpdateRole([FromBody] RoleDto role)
+    public async Task<ActionResult> CreateUpdateRole([FromBody] RoleDto role)
     {
-        await _roleService.CreateUpdateRole(role);
-        return Ok(role);
+        await _roleService.CreateUpdateRoleAsync(role);
+        return Ok();
     }
 
     [HttpDelete("{roleId:int}")]
     public async Task<ActionResult> DeleteRole(int roleId)
     {
-        await _roleService.DeleteRoleById(roleId);
+        await _roleService.DeleteRoleByIdAsync(roleId);
         return Ok();
     }
     
