@@ -3,5 +3,6 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
-.idea/.idea.SmBeachApp/.idea/material_theme_project_new.xml
-.idea/.idea.SmBeachApp/.idea/workspace.xml
+.idea/
+
+
