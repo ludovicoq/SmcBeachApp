@@ -65,7 +65,7 @@ public class RoleService
     }
     
     
-    public async Task CreateUpdateRole(RoleDto model)
+    public async Task CreateUpdateRoleAsync(RoleDto model)
     {
         var role = await _ctx.Roles.FirstOrDefaultAsync(r => r.RoleId == model.RoleId);
 
@@ -82,7 +82,7 @@ public class RoleService
         await _ctx.SaveChangesAsync();
     }
 
-    public async Task DeleteRoleById(int roleId)
+    public async Task DeleteRoleByIdAsync(int roleId)
     {
         var role = await _ctx.Roles
             .FirstOrDefaultAsync(r => r.RoleId == roleId);
@@ -92,7 +92,7 @@ public class RoleService
             throw new HttpException(HttpStatusCode.NotFound, TranslationStrings.ROLE_NOT_FOUND);
         }
         
-        var activeUserRoles = await _ctx.Roles
+        var activeUserRoles = await _ctx.UserRoles
             .AsNoTracking()
             .AnyAsync(r => r.RoleId == roleId);
 

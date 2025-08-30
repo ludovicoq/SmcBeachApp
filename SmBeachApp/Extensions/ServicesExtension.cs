@@ -8,5 +8,6 @@ public static class ServicesExtension
     {
         services.AddScoped<AuthService>();
         services.AddScoped<RoleService>();
+        services.AddScoped<GroupService>();
     }
 }

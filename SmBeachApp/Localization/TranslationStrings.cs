@@ -16,6 +16,10 @@
         /* ------------ R O L E ------------ */
         public static string ROLE_USED_BY_USER => "role.used-by-user";
         public static string ROLE_NOT_FOUND =>  "role.not-found";
+        
+        /* ------------ G R O U P ------------ */
+        public static string GROUP_USED_BY_USER => "group.used-by-user";
+        public static string GROUP_NOT_FOUND =>  "group.not-found";
 
     }
 }
