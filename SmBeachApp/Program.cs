@@ -5,14 +5,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using SmBeachApp.Data;
 using SmBeachApp.Extensions;
-using SmBeachApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddLocalization();
 
 // Adding services to the container
 builder.Services.AddServices();
+builder.Services.AddLocalization();
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
@@ -64,7 +63,6 @@ app.UseRequestLocalization(opt =>
 });
 
 app.UseGlobalExceptionHandler();
-
 
 app.UseHttpsRedirection();
 

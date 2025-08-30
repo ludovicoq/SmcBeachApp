@@ -97,19 +97,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="auth.user-not-found" xml:space="preserve">
-	  <value>Utente non trovato!</value>
-  </data>
   <data name="auth.user-psw-incorrect" xml:space="preserve">
-	  <value>Nome utente o password sono sbagliati!</value>
+	  <value>Nome utente o password non sono corretti</value>
   </data>
   <data name="auth.user-already-registered" xml:space="preserve">
 	  <value>Utente già registrato</value>
   </data>
   <data name="role.used-by-user" xml:space="preserve">
-	  <value>Impossibile eliminare ruolo perchè usato da un untente</value>
+	  <value>Impossibile eliminare un ruolo perchè usato da un utente</value>
   </data>
   <data name="role.not-found" xml:space="preserve">
 	  <value>Ruolo non trovato</value>
+  </data>
+  <data name="auth.user-not-found" xml:space="preserve">
+	  <value>Utente non trovato</value>
   </data>
 </root>

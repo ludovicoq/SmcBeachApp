@@ -16,5 +16,6 @@
         /* ------------ R O L E ------------ */
         public static string ROLE_USED_BY_USER => "role.used-by-user";
         public static string ROLE_NOT_FOUND =>  "role.not-found";
+
     }
 }
